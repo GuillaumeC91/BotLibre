@@ -7,9 +7,9 @@
 	<name>Bot Libre</name>
 	<packaging>pom</packaging>
 	<modules>
+		<module>chat-engine</module>
 		<module>ai-engine</module>
 		<module>android-sdk</module>
-		<module>chat-engine</module>
 	</modules>
 
 

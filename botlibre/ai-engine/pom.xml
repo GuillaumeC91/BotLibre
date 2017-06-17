@@ -51,6 +51,12 @@
 	</build>
 
 	<dependencies>
+		<!-- Chat Engine Dependency for org.relayirc -->
+		<dependency>
+			<groupId>org.botlibre</groupId>
+			<artifactId>botlibre.chat-engine</artifactId>
+			<version>5.0</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.boofcv/all -->
 		<dependency>
 			<groupId>org.boofcv</groupId>
@@ -127,10 +133,11 @@
 			<groupId>org.twitter4j</groupId>
 			<artifactId>twitter4j-core</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
-			<groupId>org.botlibre</groupId>
-			<artifactId>botlibre.chat-engine</artifactId>
-			<version>5.0</version>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 

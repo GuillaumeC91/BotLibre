@@ -110,7 +110,7 @@
 			<dependency>
 				<groupId>org.postgresql</groupId>
 				<artifactId>postgresql</artifactId>
-				<version>9.4-1203-jdbc4</version>
+				<version>42.1.1</version>
 			</dependency>
 			<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
 			<dependency>
@@ -167,7 +167,6 @@
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>4.12</version>
-				<scope>test</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

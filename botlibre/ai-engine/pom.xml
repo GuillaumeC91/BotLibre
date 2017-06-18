@@ -10,68 +10,6 @@
 	<artifactId>botlibre.ai-engine</artifactId>
 	<name>Bot Libre - AI Engine</name>
 
-	<build>
-		<plugins>
-			<!-- Maven Enforcer Plugin -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>enforce-maven</id>
-						<phase>validate</phase>
-						<goals>
-							<goal>enforce</goal>
-						</goals>
-						<configuration>
-							<rules>
-								<requireMavenVersion>
-									<version>[2.2.1,)</version>
-								</requireMavenVersion>
-								<requireJavaVersion>
-									<message>Project must be compiled with Java 6 or higher</message>
-									<version>1.7.0</version>
-								</requireJavaVersion>
-							</rules>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-resources-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>copy-resources</id>
-						<!-- here the phase you need -->
-						<phase>validate</phase>
-						<goals>
-							<goal>copy-resources</goal>
-						</goals>
-						<configuration>
-							<outputDirectory>${basedir}/target/classes/META-INF</outputDirectory>
-							<resources>
-								<resource>
-									<directory>src/main/persistence</directory>
-									<filtering>true</filtering>
-								</resource>
-							</resources>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-		<pluginManagement>
-			<plugins>
-				<!-- Maven Enforcer Plugin -->
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-enforcer-plugin</artifactId>
-					<version>1.4</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
-
 	<dependencies>
 		<!-- Chat Engine Dependency for org.relayirc -->
 		<dependency>
